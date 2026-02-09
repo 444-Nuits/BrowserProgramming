@@ -47,6 +47,12 @@ main {
   scroll-margin-top: 20px;
 }
 
+#theme {
+  right : 0px;
+  color : red;
+  font-weight : bold;
+}
+
 section {
   margin-bottom: 4rem;
 }
@@ -106,4 +112,9 @@ nav li {
 
 nav a {
   text-decoration: none;
+}
+
+.light-theme {
+  background: white;
+  color: #050510;
 }
