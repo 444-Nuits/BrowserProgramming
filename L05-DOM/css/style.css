@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #050510, #0a0f2c);
+  color: #e0e6ff;
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+
+a {
+  color: #4cc9f0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-shadow: 0 0 8px #4cc9f0;
+}
+
+header, footer {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  color: #7df9ff;
+}
+
+header p {
+  margin-top: 1rem;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+#main {
+  scroll-margin-top: 20px;
+}
+
+/* ── Theme Toggle Button ── */
+#theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 999;
+  background: rgba(76, 201, 240, 0.15);
+  color: #4cc9f0;
+  border: 1px solid #4cc9f0;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+#theme-toggle:hover {
+  background: #4cc9f0;
+  color: #050510;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #4cc9f0;
+  padding-left: 1rem;
+}
+
+/* ── Skills Grid ── */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skill-card {
+  background: rgba(76, 201, 240, 0.08);
+  border: 1px solid rgba(76, 201, 240, 0.3);
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #7df9ff;
+  letter-spacing: 1px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.skill-card:hover {
+  background: rgba(76, 201, 240, 0.2);
+  transform: translateY(-3px);
+}
+
+/* ── Project Cards ── */
+.project-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(76, 201, 240, 0.15);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-card h3 {
+  font-size: 1.3rem;
+  color: #7df9ff;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  margin-bottom: 0.75rem;
+  opacity: 0.85;
+}
+
+.project-card a {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+figure {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+iframe {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+figcaption {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 0.7rem;
+}
+
+#skip {
+  position: absolute;
+  left: -9999px;
+}
+
+#skip:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+#last-updated {
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+footer {
+  line-height: 2;
+}
+
+/* ── Light Theme ── */
+body.light {
+  background: #f4f7fb;
+  color: #111827;
+}
+
+body.light header,
+body.light footer {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+body.light header h1 {
+  color: #0a69ad;
+}
+
+body.light h2 {
+  border-color: #0a69ad;
+}
+
+body.light a {
+  color: #0a69ad;
+}
+
+body.light a:hover {
+  text-shadow: 0 0 6px #0a69ad44;
+}
+
+body.light .skill-card {
+  background: rgba(10, 105, 173, 0.08);
+  border-color: rgba(10, 105, 173, 0.3);
+  color: #0a69ad;
+}
+
+body.light .skill-card:hover {
+  background: rgba(10, 105, 173, 0.15);
+}
+
+body.light .project-card {
+  background: rgba(0, 0, 0, 0.03);
+  border-color: rgba(10, 105, 173, 0.2);
+}
+
+body.light .project-card h3 {
+  color: #0a69ad;
+}
+
+body.light #theme-toggle {
+  background: rgba(10, 105, 173, 0.1);
+  color: #0a69ad;
+  border-color: #0a69ad;
+}
+
+body.light #theme-toggle:hover {
+  background: #0a69ad;
+  color: white;
+}
