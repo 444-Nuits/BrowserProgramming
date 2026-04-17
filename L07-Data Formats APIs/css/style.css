@@ -350,3 +350,7 @@ body.light .api-label {
 body.light .api-value {
   color: #111827;
 }
+
+#weather-app-btn {
+  margin-top: 1vw;
+}
